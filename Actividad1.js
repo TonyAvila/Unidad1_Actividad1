@@ -40,10 +40,17 @@ function buscarPatron(texto, patron) {
 
 
 function main() {
-    
-    let texto = "000111101000ABCHO";
-    let patronesABuscar = ["00", "101", "ABC", "HO"];
+    let texto =  prompt('¿Cuál es el texto?');
+
+    let cuantosPatrones =  prompt('¿Cuantos patrones quires buscar?');
+    let patronesABuscar = [];
     let i;
+    for (i = 1; i <= cuantosPatrones; i++) {
+
+    patronesABuscar.push(prompt('¿Cuál es el patron' + i +'?' ));
+    }
+    
+ 
 
     // Total de coincidencias de todos los patrones
     let total = 0;
